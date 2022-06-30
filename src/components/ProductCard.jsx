@@ -1,8 +1,9 @@
+import Image from "next/image";
 import React from "react";
 import { useDispatch } from "react-redux";
 
 import { addProduct } from "../../redux/cartSlice";
-// import ReactStars from "react-stars";
+
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
   const quantity = 1;
@@ -17,7 +18,7 @@ const ProductCard = ({ product }) => {
     <div className="w-72 p-3 h-96 shadow-xl rounded-xl ">
       <div className="h-[70%] relative rounded-2xl ">
 
-        <img
+        <Image
           src={image}
           alt="image nisi"
           className="h-full w-full object-fill "

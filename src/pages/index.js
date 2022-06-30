@@ -1,8 +1,6 @@
-import Head from "next/head";
-import Image from "next/image";
-import Navbar from "../components/Navbar";
+
 import ProductCard from "../components/ProductCard";
-import Login from "./Login";
+
 
 export async function getServerSideProps() {
   const res = await fetch("https://fakestoreapi.com/products");

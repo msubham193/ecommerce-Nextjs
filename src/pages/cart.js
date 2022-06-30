@@ -1,11 +1,11 @@
-import Link from "next/link";
+
 import { useRouter } from "next/router";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import CartProduct from "../components/CartProduct";
 const Cart = () => {
-  const dispatch = useDispatch();
+
   const router = useRouter();
   const cart = useSelector((state) => state);
 

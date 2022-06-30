@@ -2,7 +2,7 @@ import React from "react";
 
 import { MdClose } from "react-icons/md";
 import { FiPlus, FiMinus } from "react-icons/fi";
-import data from "./data";
+import Image from "next/image";
 
 const CartProduct = ({ item }) => {
   const { image, title, price, description, } = item;
@@ -10,7 +10,7 @@ const CartProduct = ({ item }) => {
   return (
     <div className="border-1 border-gray-300 relative flex mb-2 shadow-lg">
       <div className="h-52 p-2  ">
-        <img src={image} alt="" className="h-full" />
+        <Image src={image} alt="" className="h-full" />
 
         <MdClose className="text-2xl absolute top-1 right-2" />
       </div>

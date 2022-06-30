@@ -4,7 +4,7 @@ import { AiOutlinePoweroff, AiOutlineHome } from "react-icons/ai";
 import { BsHandbag } from "react-icons/bs";
 import { useRouter } from "next/router";
 import { useAuth } from "../../context/authContext";
-import { useSelector,useDispatch } from "react-redux";
+import { useSelector} from "react-redux";
 
 const Navbar = () => {
   const router = useRouter();

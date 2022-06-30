@@ -1,5 +1,6 @@
+import Image from "next/image";
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 const Cheackout = () => {
   const cart = useSelector((state) => state);
 
@@ -157,7 +158,7 @@ const Cheackout = () => {
                   {cart.products.map((item) => (
                     <div className="flex space-x-4 shadow-md p-2" key={item.id}>
                       <div>
-                        <img
+                        <Image
                           src={item.image}
                           alt="image"
                           className="w-60 h-full"
