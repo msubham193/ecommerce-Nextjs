@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React from "react";
 import { useDispatch } from "react-redux";
@@ -18,7 +19,7 @@ const ProductCard = ({ product }) => {
     <div className="w-72 p-3 h-96 shadow-xl rounded-xl ">
       <div className="h-[70%] relative rounded-2xl ">
 
-        <Image
+        <img
           src={image}
           alt="image nisi"
           className="h-full w-full object-fill "
